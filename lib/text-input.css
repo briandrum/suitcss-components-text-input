@@ -1,0 +1,82 @@
+/** @define TextInput; use strict */
+
+:root {
+  --TextInput-field-border-color: currentcolor;
+  --TextInput-field-border-width: 1px;
+  --TextInput-field-color: inherit;
+  --TextInput-field-disabled-opacity: 0.6;
+  --TextInput-field-font: inherit;
+  --TextInput-field-padding: 0.4em 0.75em;
+}
+
+/**
+ * 1. Normalize `box-sizing` across all elements that this component could be
+ *    applied to.
+ * 2. Inherit text color from ancestor.
+ * 3. Inherit font styles from ancestor.
+ * 4. Normalize `line-height`.
+ */
+
+.TextInput {
+}
+
+.TextInput--multiline {
+}
+
+.TextInput-label {
+}
+
+.TextInput-field {
+  border-color: var(--TextInput-field-border-color);
+  border-style: solid;
+  border-width: var(--TextInput-field-border-width);
+  box-sizing: border-box; /* 1 */
+  color: var(--TextInput-field-color); /* 2 */
+  cursor: text;
+  font: var(--TextInput-field-font); /* 3 */
+  line-height: normal; /* 5 */
+  padding: var(--TextInput-field-padding);
+}
+
+.TextInput-field {
+  display: inline-block;
+}
+
+/**
+ * UI states
+ */
+
+.TextInput-field:hover {
+  background-color: red;
+}
+
+.TextInput-field:focus {
+  background-color: green;
+}
+
+.TextInput-field:disabled {
+  opacity: var(--TextInput-field-disabled-opacity);
+  pointer-events: none;
+}
+
+.TextInput-field:in-range {
+}
+
+.TextInput-field:invalid {
+  border-color: red;
+}
+
+.TextInput-field:read-only {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.TextInput-field:required {
+  border-width: 3px;
+}
+
+.TextInput-field:out-of-range {
+}
+
+.TextInput-field:valid {
+}

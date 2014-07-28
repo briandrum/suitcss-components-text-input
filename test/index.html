@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>TextInput [component] - SUIT CSS</title>
+<meta name="viewport" content="initial-scale=1,width=device-width">
+<link rel="stylesheet" href="../build/test.css">
+<style>
+  #colorInheritance {
+    color: green;
+  }
+
+  #fontInheritance {
+    font-family: sans-serif;
+    font-family: 20px;
+    font-weight: bold;
+  }
+</style>
+
+<div class="Test">
+  <h1 class="Test-title">SUIT CSS: <a href="https://github.com/briandrum/components-text-input">TextInput</a> component tests</h1>
+
+  <h3 class="Test-describe">.TextInput</h3>
+  <h3 class="Test-it">renders inline-block</h3>
+  <div class="Test-run" id="renders">
+    <input class="TextInput-field" placeholder="Placeholder text" type="text" value="Value text">
+  </div>
+
+  <h3 class="Test-it">inherits font</h3>
+  <div class="Test-run" id="fontInheritance">
+    <input class="TextInput-field" placeholder="Placeholder text" type="text" value="Value text">
+  </div>
+
+  <h3 class="Test-it">inherits color</h3>
+  <div class="Test-run" id="colorInheritance">
+    <input class="TextInput-field" placeholder="Placeholder text" type="text" value="Value text">
+  </div>
+
+  <!--div class="Test-run">
+    <div class="TextInput">
+      <label class="TextInput-label">Label</label>
+      <input class="TextInput-field" placeholder="Placeholder text" type="text" value="Value text">
+    </div>
+  </div-->
+
+  <h3 class="Test-describe">.TextInput-field:disabled</h3>
+  <h3 class="Test-it">renders disabled</h3>
+  <div class="Test-run" id="disabled-renders">
+    <div class="TextInput">
+      <input class="TextInput-field" disabled placeholder="Placeholder text" type="text" value="Value text">
+    </div>
+  </div>
+
+  <h3 class="Test-describe">.TextInput-field:read-only</h3>
+  <h3 class="Test-it">renders read-only</h3>
+  <div class="Test-run" id="read-only-renders">
+    <div class="TextInput">
+      <input class="TextInput-field" placeholder="Placeholder text" readonly type="text" value="Value text">
+    </div>
+  </div>
+
+  <h3 class="Test-describe">.TextInput-field:required</h3>
+  <h3 class="Test-it">renders required</h3>
+  <div class="Test-run" id="required-renders">
+    <div class="TextInput">
+      <input class="TextInput-field" placeholder="Placeholder text" required type="text" value="Value text">
+    </div>
+  </div>
+
+  <h3 class="Test-describe">.TextInput-field:valid</h3>
+  <h3 class="Test-it">renders valid</h3>
+  <div class="Test-run" id="valid-renders">
+    <div class="TextInput">
+      <input class="TextInput-field" placeholder="Placeholder text" valid type="text" value="Value text">
+    </div>
+  </div>
+</div>

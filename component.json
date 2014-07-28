@@ -1,0 +1,8 @@
+{
+  "name": "suitcss-components-text-input",
+  "repo": "briandrum/components-text-input",
+  "version": "0.1.0",
+  "styles": ["lib/text-input.css"],
+  "author": "Brian Drum",
+  "license": "MIT"
+}

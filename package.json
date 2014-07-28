@@ -1,0 +1,32 @@
+{
+  "name": "suitcss-components-text-input",
+  "version": "0.1.0",
+  "style": "index.css",
+  "files": [
+    "index.css",
+    "lib"
+  ],
+  "devDependencies": {
+    "suitcss-components-test": "*",
+    "suitcss-preprocessor": "~0.4.0"
+  },
+  "scripts": {
+    "build": "npm run setup && npm run preprocess",
+    "build-test": "npm run setup && npm run preprocess-test",
+    "preprocess": "suitcss index.css build/build.css",
+    "preprocess-test": "suitcss test/test.css build/test.css",
+    "setup": "npm install && mkdir -p build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/briandrum/suitcss-components-text-input.git"
+  },
+  "keywords": [
+    "browser",
+    "css-components",
+    "form",
+    "input",
+    "suitcss",
+    "style"
+  ]
+}
